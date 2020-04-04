@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>name conformation</title>
+	<script type="text/javascript">
+		function show(){
+			var name=prompt("enter your name","type here..");
+			var conformation=confirm("your name is:"+name);
+			if(conformation==false)
+				return show();
+			else
+				document.write("your name is :"+name)
+		}
+	</script>
+</head>
+<body>
+<form>
+	<input type="button" onclick="show();" value="name">
+</form>
+</body>
+</html>
