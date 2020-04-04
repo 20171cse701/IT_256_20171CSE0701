@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>confirm</title>
+	<script type="text/javascript">
+		function getConformation(){
+		var val=confirm("Do you want to continue");
+		if (val==true){
+			document.write("user wants to continue");
+			return true
+		}
+		else{
+			document.write("user don't want to continue");
+			return false
+		}
+	}
+	</script>
+</head>
+<body>
+<p>click the following button..</p>
+<form >
+	<input type="button" value="click me" onclick="getConformation();" />
+</form>
+</body>
+</html>

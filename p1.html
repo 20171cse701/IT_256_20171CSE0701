@@ -1,13 +1,21 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Java Script internal Script</title>
-		<script type="text/javascript">
-			function hello(){
-				alert("hello world!")
-			}
-		</script>
-	</head>
-	<body>
-		<input type="button" onclick="hello()" name="ok" value="click me"/>
-	</body>
+<head>
+	<title>onclick</title>
+	<script type="text/javascript">
+		function over(){
+			document.write("mouse over");
+			
+		}
+		function out(){
+			document.write("mouse out");
+		}
+	</script> 
+</head>
+<body>
+	<p>Bring mouse to below...</p>
+	<div onmouseover="over()" onmouseout="out()">
+		<h2>this is inside div</h2>
+	</div>	
+</body>
 </html>
